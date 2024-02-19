@@ -7,18 +7,15 @@ interface CartItemIf {
 }
 
 class CartItem implements CartItemIf {
-  id: number;
-  title: string;
-  qty: number;
-  price: number;
-  onSale: boolean;
+  public id: number;
 
-  constructor(title: string, qty: number, price: number, onSale: boolean) {
+  constructor(
+    public title: string,
+    public qty: number,
+    public price: number,
+    public onSale: boolean
+  ) {
     this.id = +Math.random().toString().slice(2);
-    this.title = title;
-    this.qty = qty;
-    this.price = price;
-    this.onSale = onSale;
   }
 }
 

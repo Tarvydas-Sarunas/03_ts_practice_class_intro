@@ -1,11 +1,11 @@
 "use strict";
 class CartItem {
     constructor(title, qty, price, onSale) {
-        this.id = +Math.random().toString().slice(2);
         this.title = title;
         this.qty = qty;
         this.price = price;
         this.onSale = onSale;
+        this.id = +Math.random().toString().slice(2);
     }
 }
 const CartArr = [
