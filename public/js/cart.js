@@ -9,27 +9,9 @@ class CartItem {
     }
 }
 const CartArr = [
-    {
-        id: 1,
-        title: 'BAsketBall',
-        qty: 1,
-        price: 69.99,
-        onSale: false,
-    },
-    {
-        id: 1,
-        title: 'Golf Club',
-        qty: 1,
-        price: 139.99,
-        onSale: false,
-    },
-    {
-        id: 1,
-        title: 'CArbon fins',
-        qty: 1,
-        price: 290,
-        onSale: true,
-    },
+    new CartItem('BasketBall', 1, 69.99, false),
+    new CartItem('Golf Club', 1, 139.99, false),
+    new CartItem('Carbon fins', 1, 290.0, false),
 ];
 console.log('CartArr ===', CartArr);
 function addToCart(arr, item) {
